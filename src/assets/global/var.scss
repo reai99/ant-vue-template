@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*variable*/
+$baseFont: 14px;
+$baseRem: 192px;
+/*colors*/
+$bgGrey: #f0f2f5;
+$primary: #187fff;
+$normal: #59a6e2;
+$warning: #ff5100;
+$danger: #fc0300;
+$borderColor: #e8e8e8;
+$scrollbarBG:#DBDFE8;
+$scrollbarColor: rgba(0, 60, 211, 0.2);
+$caseBlue:#1D52C7;
+$caseGreen:#39a030;
+$aliiotColor:#1890FF;
+@mixin scrollbar(){
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $scrollbarColor;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-track{
+    background-color: $scrollbarBG;
+  }
+}
